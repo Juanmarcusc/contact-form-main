@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <script src="/contact-form-main/script.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+</head>
+<body>
+<div class="container">
+  <h1>Contact Us</h1>
+  <form>
+    <div class="form-group">
+      <label for="inputFirstName">First Name</label>
+      <input type="text" class="form-control" id="inputFirstName" placeholder="Enter your first name" onchange="inputFN()">
+    </div>
+    <div class="form-group">
+      <label for="inputLastName">Last Name</label>
+      <input type="text" class="form-control" id="inputLastName" placeholder="Enter your last name" onchange="inputLN()">
+    </div>
+    <div class="form-group">
+      <label for="inputEmailAdrees">Email Address</label>
+      <input type="text" id="inputEmailAddrees" placeholder="Enter your Email Address" onchange="inputEA()">
+    </div>
+    <div class="form-group">
+      <label>Query Type</label><br>
+      <button type="button" id="buttonGeneralEnquiry" onclick="btnGE()">General Enquiry</button>
+      <button type="button" id="buttonSupportRequest" onclick="btnSR()">Support Request</button>
+    </div>
+    <div class="form-group">
+      <label for="inputMessage">Message</label><br>
+      <textarea class="form-control" id="inputMessage" onchange="inputM()" rows="5" placeholder="Write your message here"></textarea>
+    </div>
+    <div class="form-group">
+      <button type="button" id="buttonAccept" onclick="btnAccept()">I consent to being contacted by the team</button>
+    </div><br>
+    <button type="button" id="buttonSubmit" onclick="btnSubmit()">Submit</button>
+  </form>
+</div>
+  
+  <!--<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="/contact-form-main/script.js"></script>
+</body>
+</html>
