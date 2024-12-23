@@ -18,7 +18,7 @@ function inputLN() {
     console.log(valorInputLN)   
 }
 function inputEA() {
-    const valorInputEA = document.getElementById('inputEmailAddrees').value 
+    const valorInputEA = document.getElementById('inputEmailAddress').value 
     inputEmailAddress = valorInputEA
     console.log(valorInputEA)
 }
@@ -63,5 +63,5 @@ function btnSubmit(event) {
 
     console.log("Form Datas:", formData)
 
-    alert("Thanks,"+ firstName + "your datas is safe sucessfully" )
+    alert("Thanks, "+ inputFirstName + " your datas is safe sucessfully" )
 }
